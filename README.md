@@ -119,7 +119,7 @@ Supplement 7 adds 4,620 glyphs, specifically CIDs 14217 through 18836, for the 4
 
 ### Special Notes
 
-The 268 hanja that are genuine duplicates are handled by mapping, via the Unicode [CMap resources](https://github.com/adobe-type-tools/cmap-resources/Adobe-KR-9/), the corresponding CJK Compatibility Ideograph code points to the corresponding glyphs for their canonical equivalents, all of which are CJK Unified Ideographs. In addition, the UVS definition file also specifies SVSes that correspond to 270 CJK Compatibility Ideographs: U+F900 through U+FA0B, U+FA2E &amp; U+FA2F.
+The 268 hanja that are genuine duplicates are handled by mapping, via the Unicode [CMap resources](https://github.com/adobe-type-tools/cmap-resources/tree/master/Adobe-KR-9/), the corresponding CJK Compatibility Ideograph code points to the corresponding glyphs for their canonical equivalents, all of which are CJK Unified Ideographs. In addition, the UVS definition file also specifies SVSes that correspond to 270 CJK Compatibility Ideographs: U+F900 through U+FA0B, U+FA2E &amp; U+FA2F.
 
 ---
 ## Supplement 8—Adobe-KR-8
