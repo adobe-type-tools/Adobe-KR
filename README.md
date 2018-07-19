@@ -1,4 +1,4 @@
-# The Adobe-KR-9 Character Collection (Beta)
+# The Adobe-KR-9 Character Collection
 ---
 © 2018 Adobe Systems Incorporated.
 
@@ -14,12 +14,12 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
 
 Adobe holds no patents on the subject matter of this specification.
 
-Last updated 2018-05-15
+Last updated 2018-07-19
 
 ---
 ## Introduction
 
-The purpose of this document is to define and describe the *Adobe-KR-9* character collection, which enumerates 22,876 glyphs, and whose designation is derived from the following three /CIDSystemInfo dictionary entries:
+The purpose of this document is to define and describe the *Adobe-KR-9* character collection, which enumerates 22,897 glyphs, and whose designation is derived from the following three /CIDSystemInfo dictionary entries:
 
 * /Registry (Adobe)
 * /Ordering (KR)
@@ -33,20 +33,20 @@ A character collection contains the glyphs that are required to develop font pro
 
 The character collection that results from each Supplement includes the glyphs associated with all earlier Supplements. For example, Supplement 9 includes all glyphs defined in Supplements 0 through 8.
 
-The Adobe-KR-9 character collection enumerates 22,876 glyphs, specifically CIDs 0 through 22875, among 10 Supplements, designated 0 through 9. Adobe-KR-9 completely supports the current [KS (*Korean Standard*) X 1001](http://www.kssn.net/stdks/KS_detail.asp?k1=X&k2=1001&k3=1) character set standard and all 11,172 modern hangul syllables, and also includes the hanja (aka ideographs) in the [KS X 1002](http://www.kssn.net/stdks/KS_detail.asp?k1=X&k2=1002&k3=1) character set standard, along with additional hanja from the [*Inmyeong-yong Hanja*](https://help.scourt.go.kr/nm/images/hanja/hanja_2015.pdf) (인명용 한자/人名用漢字) set that is published by the Supreme Court of Korea (*Daebeobwon*/대법원/大法院). The following table summarizes these 10 Supplements, and also provides the pages on which their representative glyphs are shown in the [*Adobe-KR-9.pdf*](https://github.com/adobe-type-tools/Adobe-KR/raw/master/Adobe-KR-9.pdf) file:
+The Adobe-KR-9 character collection enumerates 22,897 glyphs, specifically CIDs 0 through 22896, among 10 Supplements, designated 0 through 9. Adobe-KR-9 completely supports the current [KS (*Korean Standard*) X 1001](http://www.kssn.net/stdks/KS_detail.asp?k1=X&k2=1001&k3=1) character set standard and all 11,172 modern hangul syllables, and also includes the hanja (aka ideographs) in the [KS X 1002](http://www.kssn.net/stdks/KS_detail.asp?k1=X&k2=1002&k3=1) character set standard, along with additional hanja from the [*Inmyeong-yong Hanja*](https://help.scourt.go.kr/nm/images/hanja/hanja_2015.pdf) (인명용 한자/人名用漢字) set that is published by the Supreme Court of Korea (*Daebeobwon*/대법원/大法院). The following table summarizes these 10 Supplements, and also provides the pages on which their representative glyphs are shown in the [*Adobe-KR-9.pdf*](https://github.com/adobe-type-tools/Adobe-KR/raw/master/Adobe-KR-9.pdf) file:
 
 **Supplement** | **Additional CIDs** | **CID Range** | **Total CIDs** | **Date of Establishment** | **Pages**
 --- | --- | --- | --- | --- | ---
-0 | *n/a* | 0–3034 | 3,035 | 2018-05-15 | 1–7
-1 | 1,578 | 3035–4612 | 4,613 | 2018-05-15 | 7–10
-2 | 6,814 | 4613–11426 | 11,427 | 2018-05-15 | 10–23
-3 | 280 | 11427–11706 | 11,707 | 2018-05-15 | 23–24
-4 | 147 | 11707–11853 | 11,854 | 2018-05-15 | 24
-5 | 360 | 11854–12213 | 12,214 | 2018-05-15 | 24–25
-6 | 2,003 | 12214–14216 | 14,217 | 2018-05-15 | 25–29
-7 | 4,620 | 14217–18836 | 18,837 | 2018-05-15 | 29–38
-8 | 3,622 | 18837–22458 | 22,459 | 2018-05-15 | 38–45
-9 | 417 | 22459–22875 | 22,876 | 2018-05-15 | 45–46
+0 | *n/a* | 0–3058 | 3,059 | 2018-07-19 | 1–7, 46
+1 | 1,578 | 3059–4636 | 4,637 | 2018-07-19 | 7–10
+2 | 6,814 | 4637–11450 | 11,451 | 2018-07-19 | 10–23
+3 | 280 | 11451–11730 | 11,731 | 2018-07-19 | 23–24
+4 | 147 | 11731–11877 | 11,878 | 2018-07-19 | 24
+5 | 357 | 11878–12234 | 12,235 | 2018-07-19 | 24–25
+6 | 2,003 | 12235–14237 | 14,238 | 2018-07-19 | 25–29
+7 | 4,620 | 14238–18857 | 18,858 | 2018-07-19 | 29–38
+8 | 3,622 | 18858–22479 | 22,480 | 2018-07-19 | 38–45
+9 | 417 | 22480–22896 | 22,897 | 2018-07-19 | 45–46
 
 Each CID (*Character ID*) in a character collection is associated with a class of character shapes or glyphs. The specific shape of a glyph from a given glyph class is dependent on the typeface style, typeface design, and possibly other factors. Glyphs for all CIDs are illustrated in this specification, providing a specific example or instance of the correspondence between a CID and its glyph shape class. Font developers should design glyphs for each CID of the character collection, and may use this document as a reference when proofing or otherwise validating CIDFont resources.
 
@@ -55,7 +55,7 @@ The following sections detail the history and contents of each of the 10 Supplem
 ---
 ## Supplement 0—Adobe-KR-0
 
-Supplement 0, which includes a modest 3,035 glyphs, specifically CIDs 0 through 3034, is intended to provide a core set of glyphs that are expected to be in modern OpenType Korean fonts, and includes a minimal set of glyphs for modern hangul syllables, along with glyphs to support basic Korean and Latin typography. Of course, glyphs for the core set of 2,350 modern hangul syllables are included, along with glyphs for 418 additional high-frequency modern hangul syllables whose set was determined by KFA (*Korea Font Association*). Glyphs for a small number of additional modern hangul syllables are also included. In total, glyphs for 2,780 modern hangul syllables are included in Supplement 0. The table below specifies the number of glyphs for modern hangul syllables that are included in Supplement 0 for four character set standards, KS X 1001 (ROK), KS X 1002 (ROK), KPS 9566 (DPRK), and GB/T 12052 (PRC):
+Supplement 0, which includes a modest 3,059 glyphs, specifically CIDs 0 through 3058, is intended to provide a core set of glyphs that are expected to be in modern OpenType Korean fonts, and includes a minimal set of glyphs for modern hangul syllables, along with glyphs to support basic Korean and Latin typography. Of course, glyphs for the core set of 2,350 modern hangul syllables are included, along with glyphs for 418 additional high-frequency modern hangul syllables whose set was determined by KFA (*Korea Font Association*). Glyphs for a small number of additional modern hangul syllables are also included. In total, glyphs for 2,780 modern hangul syllables are included in Supplement 0. The table below specifies the number of glyphs for modern hangul syllables that are included in Supplement 0 for four character set standards, KS X 1001 (ROK), KS X 1002 (ROK), KPS 9566 (DPRK), and GB/T 12052 (PRC):
 
 **Standard** | **Number of Glyphs**
 --- | ---
@@ -69,7 +69,7 @@ Also included in Supplement 0 are glyphs for ASCII, some ISO Latin 1 (aka ISO/IE
 ---
 ## Supplement 1—Adobe-KR-1
 
-Supplement 1 adds 1,578 glyphs, specifically CIDs 3035 through 4612, all of which are for modern hangul syllables that are included in the KS X 1002 (ROK), KPS 9566 (DPRK), and GB/T 12052 (PRC) character set standards. The table below includes the number of glyphs for modern hangul syllables that are included in Supplement 1 for each of these three character set standards:
+Supplement 1 adds 1,578 glyphs, specifically CIDs 3059 through 4636, all of which are for modern hangul syllables that are included in the KS X 1002 (ROK), KPS 9566 (DPRK), and GB/T 12052 (PRC) character set standards. The table below includes the number of glyphs for modern hangul syllables that are included in Supplement 1 for each of these three character set standards:
 
 **Standard** | **Number of Glyphs**
 --- | ---
@@ -82,22 +82,22 @@ In other words, Supplements 0 and 1 together provide basic support for the three
 ---
 ## Supplement 2—Adobe-KR-2
 
-Supplement 2 adds 6,814 glyphs, specifically CIDs 4613 through 11426, all of which are for modern hangul syllables that, when combined with those in Supplements 0 and 1, complete the set of 11,172 modern hangul syllables that have been included in Unicode since Version 2.0 (1996).
+Supplement 2 adds 6,814 glyphs, specifically CIDs 4637 through 11450, all of which are for modern hangul syllables that, when combined with those in Supplements 0 and 1, complete the set of 11,172 modern hangul syllables that have been included in Unicode since Version 2.0 (1996).
 
 ---
 ## Supplement 3—Adobe-KR-3
 
-Supplement 3 adds 280 glyphs, specifically CIDs 11427 through 11706, for enclosed or otherwise annotated characters, such as digits, Latin characters, and hangul letters/syllables. The scope goes beyond what is found in regional character set standards, and includes appropriate characters found in the Unicode blocks named [Enclosed Alphanumerics](https://www.unicode.org/charts/PDF/U2460.pdf), [Dingbats](https://www.unicode.org/charts/PDF/U2700.pdf), [Enclosed CJK Letters and Months](https://www.unicode.org/charts/PDF/U3200.pdf), and [Enclosed Alphanumeric Supplement](https://www.unicode.org/charts/PDF/U1F100.pdf).
+Supplement 3 adds 280 glyphs, specifically CIDs 11451 through 11730, for enclosed or otherwise annotated characters, such as digits, Latin characters, and hangul letters/syllables. The scope goes beyond what is found in regional character set standards, and includes appropriate characters found in the Unicode blocks named [Enclosed Alphanumerics](https://www.unicode.org/charts/PDF/U2460.pdf), [Dingbats](https://www.unicode.org/charts/PDF/U2700.pdf), [Enclosed CJK Letters and Months](https://www.unicode.org/charts/PDF/U3200.pdf), and [Enclosed Alphanumeric Supplement](https://www.unicode.org/charts/PDF/U1F100.pdf).
 
 ---
 ## Supplement 4—Adobe-KR-4
 
-Supplement 4 adds 147 glyphs, specifically CIDs 11707 through 11853, for full-width punctuation, full-width Latin characters, and vertical forms.
+Supplement 4 adds 147 glyphs, specifically CIDs 11731 through 11877, for full-width punctuation, full-width Latin characters, and vertical forms.
 
 ---
 ## Supplement 5—Adobe-KR-5
 
-Supplement 5 adds 360 glyphs, specifically CIDs 11854 through 12213, mainly for the purpose of KS X 1001 compatibility, for the benefit of font developers who feel that they need to support this particular character set standard in its entirety. Included in Supplement 5 are glyphs for math (only the basic math symbols are included in Supplement 0), line-drawing characters, and other symbols.
+Supplement 5 adds 357 glyphs, specifically CIDs 11878 through 12234, mainly for the purpose of KS X 1001 compatibility, for the benefit of font developers who feel that they need to support this particular character set standard in its entirety. Included in Supplement 5 are glyphs for math (only the basic math symbols are included in Supplement 0), line-drawing characters, and other symbols.
 
 ### Special Notes
 
@@ -106,7 +106,7 @@ Additional glyphs for KS X 1001 compatibility glyphs that correspond to Latin an
 ---
 ## Supplement 6—Adobe-KR-6
 
-Supplement 6 adds 2,003 glyphs, specifically CIDs 12214 through 14216, for the two hangul tone marks and their vertical forms, a modest set of 161 archaic (aka pre-modern) hangul syllables that fall outside the modern set of 11,172 that are necessary for the Jeju dialect (제주말 *jejumal*), nominal (aka encoded) forms of combining jamo, and the combining forms themselves. Included in the latter are six sets of leading jamo (L), two sets of vowel jamo (V), and four sets of trailing jamo (T). The OpenType &#x27;[ljmo](https://docs.microsoft.com/en-us/typography/opentype/spec/features_ko#ljmo)&#x27; (*Leading Jamo Forms*), &#x27;[vjmo](https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#vjmo)&#x27; (*Vowel Jamo Forms*), and &#x27;[tjmo](https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-tjmo)&#x27; (*Trailing Jamo Forms*) GSUB features are expected to be used. The 1,838 glyphs for combining jamo can represent a staggering 1,638,750 hangul syllables (11,875 LV plus 1,626,875 LVT sequences), with the 11,172 modern hangul syllables being a very tiny subset.
+Supplement 6 adds 2,003 glyphs, specifically CIDs 12235 through 14237, for the two hangul tone marks and their vertical forms, a modest set of 161 archaic (aka pre-modern) hangul syllables that fall outside the modern set of 11,172 that are necessary for the Jeju dialect (제주말 *jejumal*), nominal (aka encoded) forms of combining jamo, and the combining forms themselves. Included in the latter are six sets of leading jamo (L), two sets of vowel jamo (V), and four sets of trailing jamo (T). The OpenType &#x27;[ljmo](https://docs.microsoft.com/en-us/typography/opentype/spec/features_ko#ljmo)&#x27; (*Leading Jamo Forms*), &#x27;[vjmo](https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#vjmo)&#x27; (*Vowel Jamo Forms*), and &#x27;[tjmo](https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-tjmo)&#x27; (*Trailing Jamo Forms*) GSUB features are expected to be used. The 1,838 glyphs for combining jamo can represent a staggering 1,638,750 hangul syllables (11,875 LV plus 1,626,875 LVT sequences), with the 11,172 modern hangul syllables being a very tiny subset.
 
 ### Special Notes
 
@@ -115,7 +115,7 @@ The [*ArchaicHangul161-Regular.pdf*](https://github.com/adobe-type-tools/Adobe-K
 ---
 ## Supplement 7—Adobe-KR-7
 
-Supplement 7 adds 4,620 glyphs, specifically CIDs 14217 through 18836, for the 4,888 hanja (aka CJK Unified Ideographs) that are included in the KS X 1001 standard. The number of glyphs is actually 4,620, because 268 of the 4,888 hanja are genuine duplicates that are included in that character set standard due to multiple readings.
+Supplement 7 adds 4,620 glyphs, specifically CIDs 14238 through 18857, for the 4,888 hanja (aka CJK Unified Ideographs) that are included in the KS X 1001 standard. The number of glyphs is actually 4,620, because 268 of the 4,888 hanja are genuine duplicates that are included in that character set standard due to multiple readings.
 
 ### Special Notes
 
@@ -124,27 +124,23 @@ The 268 hanja that are genuine duplicates are handled by mapping, via the Unicod
 ---
 ## Supplement 8—Adobe-KR-8
 
-Supplement 8 adds 3,622 glyphs, specifically CIDs 18837 through 22458, for additional hanja beyond those in Supplement 7. Glyphs for the 2,856 hanja in the KS X 1002 character set standard are included. The rest of the glyphs in Supplement 8 are mainly for hanja that are included in the [*Inmyeong-yong Hanja*](https://help.scourt.go.kr/nm/images/hanja/hanja_2015.pdf) (인명용 한자/人名用漢字) set that is published by the Supreme Court of Korea (*Daebeobwon*/대법원/大法院), 665 of which are encoded in the URO and Extensions A, B, E, and F. 18 are supported by the IVD (Ideographic Variation Database) via the registered KRName IVD collection, and one outlier will be in Extension G with U+30726 as its tentative code point. Also included are 81 additional hanja, 73 of which are from GB/T 12052 (PRC), with the remaining eight from KPS 9566 (DPRK).
+Supplement 8 adds 3,622 glyphs, specifically CIDs 18858 through 22479, for additional hanja beyond those in Supplement 7. Glyphs for the 2,856 hanja in the KS X 1002 character set standard are included. The rest of the glyphs in Supplement 8 are mainly for hanja that are included in the [*Inmyeong-yong Hanja*](https://help.scourt.go.kr/nm/images/hanja/hanja_2015.pdf) (인명용 한자/人名用漢字) set that is published by the Supreme Court of Korea (*Daebeobwon*/대법원/大法院), 665 of which are encoded in the URO and Extensions A, B, E, and F. 18 are supported by the IVD (Ideographic Variation Database) via the registered KRName IVD collection, and one outlier will be in Extension G and is therefore not yet encoded. Also included are 81 additional hanja, 73 of which are from GB/T 12052 (PRC), with the remaining eight from KPS 9566 (DPRK).
 
 ### Special Notes
 
-Although the CID that corresponds to the glyph for Extension G U+30726 ⿰氵恩 (tentative), CID+22440, is stable, its identity&mdash;as specified in the fourth column of the [*Adobe-KR-9_ordering.txt*](https://github.com/adobe-type-tools/Adobe-KR/raw/master/Adobe-KR-9_ordering.txt) ordering file as the glyph named *uni30726*, along with its Unicode mapping&mdash;are subject to change.
+Although the CID that corresponds to the glyph for Extension G ideograph ⿰氵恩, CID+22461, is stable, its identity&mdash;as specified in the fourth column of the [*Adobe-KR-9_ordering.txt*](https://github.com/adobe-type-tools/Adobe-KR/raw/master/Adobe-KR-9_ordering.txt) ordering file as the glyph named *u01200*, named after its U-Source source reference, UTC-01200&mdash;will eventually change to reflect the final Extension G code point, and it will then become encoded.
 
 ---
 ## Supplement 9—Adobe-KR-9
 
-Supplement 9 adds 417 glyphs, specifically CIDs 22459 through 22875, foreign languages, such as those for extended Latin, Greek, Cyrillic, and Japanese kana. While most of the characters that are supported by these glyphs are in the KS X 1001 character set standard, I need to point out that this Supplement actually includes glyphs for characters outside of that standard, such as U+03C2 ς GREEK SMALL LETTER FINAL SIGMA for making Greek functional, and additional kana and kana-related characters, such as U+30FC ー KATAKANA-HIRAGANA PROLONGED SOUND MARK, which is necessary for katakana, along with appropriate vertical forms.
+Supplement 9 adds 417 glyphs, specifically CIDs 22480 through 22896, foreign languages, such as those for extended Latin, Greek, Cyrillic, and Japanese kana. While most of the characters that are supported by these glyphs are in the KS X 1001 character set standard, I need to point out that this Supplement actually includes glyphs for characters outside of that standard, such as U+03C2 ς GREEK SMALL LETTER FINAL SIGMA for making Greek functional, and additional kana and kana-related characters, such as U+30FC ー KATAKANA-HIRAGANA PROLONGED SOUND MARK, which is necessary for katakana, along with appropriate vertical forms.
 
 ---
 ## Example OpenType Fonts
 
-In the [latest release](https://github.com/adobe-type-tools/Adobe-KR/releases/latest) of this project you will find two fully-functional, ready-to-install, and style-linked example OpenType fonts that include all 22,876 glyphs of Adobe-KR-9. The fonts are based on the open source [*Source Han Serif*](https://github.com/adobe-fonts/source-han-serif/) Pan-CJK typeface design.
+In the [latest release](https://github.com/adobe-type-tools/Adobe-KR/releases/latest) of this project you will find two fully-functional, ready-to-install, and style-linked example OpenType fonts that include all 22,897 glyphs of Adobe-KR-9. The fonts are based on the open source [*Source Han Serif*](https://github.com/adobe-fonts/source-han-serif/) Pan-CJK typeface design.
 
-Recommended OpenType GSUB feature definitions, along with specific definitions of the &#x27;[halt](https://docs.microsoft.com/en-us/typography/opentype/spec/features_fj#a-namehalt-idhaltatag-halt)&#x27; (*Alternate Half Widths*) and &#x27;[vhal](https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#a-namevhal-idvhalatag-vhal)&#x27; (*Alternate Vertical Half Metrics*) GPOS features, will be published after this specification is no longer in Beta.
-
-### Special Notes
-
-We are aware of an issue when using these fonts in the Notepad and Excel apps on Windows OS, specifically that the compatibility jamo and first two modern hangul syllables&mdash;U+AC00 &#xAC00; and U+AC01 &#xAC01;&mdash;may not display unless they are followed by a space. The Word app on Windows OS also appears to be unable to export PDFs when using these fonts. These issues will be investigated during the Beta period.
+Recommended OpenType GSUB feature definitions, along with specific definitions of the &#x27;[halt](https://docs.microsoft.com/en-us/typography/opentype/spec/features_fj#a-namehalt-idhaltatag-halt)&#x27; (*Alternate Half Widths*) and &#x27;[vhal](https://docs.microsoft.com/en-us/typography/opentype/spec/features_uz#a-namevhal-idvhalatag-vhal)&#x27; (*Alternate Vertical Half Metrics*) GPOS features, will be published at a later date.
 
 ---
 ## Special Glyphs & Other Notes
@@ -162,7 +158,7 @@ The following table lists all of the Adobe-KR-9 glyphs that are classified as a 
 **CID** | **Unicode** | **Recommendation** | **Example Fonts**
 --- | --- | --- | ---
 1 | U+0020 SPACE | Proportional for Western use | 258 (Regular), 251 (Bold)
-3003 | U+0020 SPACE | Proportional for Korean use | 310
+3006 | U+0020 SPACE | Proportional for Korean use | 310
 108 | U+2002 EN SPACE | One-half of hangul syllable width | 483
 109 | U+2003 EM SPACE | Hangul syllable width | 966
 110 | U+2004 THREE-PER-EM SPACE | One-third of hangul syllable width | 322
@@ -171,7 +167,7 @@ The following table lists all of the Adobe-KR-9 glyphs that are classified as a 
 113 | U+2007 FIGURE SPACE | Figure width | 539 (Regular), 584 (Bold)
 114 | U+2009 THIN SPACE | One-eighth of hangul syllable width | 121
 115 | U+200A HAIR SPACE | One-sixteenth of hangul syllable width | 60
-12084 | U+3000 IDEOGRAPHIC SPACE | Hanja width | 1000
+12105 | U+3000 IDEOGRAPHIC SPACE | Hanja width | 1000
 
 ### KS X 1001 Compatibility Glyphs
 
@@ -200,13 +196,13 @@ The following table provides CIDs and CID ranges that explicitly indicate which 
 
 **Set Width** | **CIDs & CID Ranges**
 --- | ---
-Full-width | 0, 119, 128, 132, 135, 136, 138–147, 149–152, 155–166, 11427–11853, 11871, 11899–11901, 11908–11952, 11954–12086, 12130–12213, 14217–22458, 22669–22875
-Proportional | 1–108, 110–118, 120–127, 129–131, 133, 134, 137, 148, 153, 154, 2998–3028, 11854–11870, 11872–11898, 11902–11907, 11953, 22459–22668
-Monospaced | 109, 167–2997, 3029–3032, 3035–11426, 12087–12129, 12216–13479
-Two-em | 3033
-Three-em | 3034
-Quarter-width | 12214, 12215
-Zero-width | 13480–14216
+Full-width | 0, 119, 128, 132, 135, 136, 138–147, 152–155, 158–169, 11451–11877, 11895, 11923–11925, 11932–11976, 11978–12107, 12151–12234, 14238–22479, 22690–22896
+Proportional | 1–108, 110–118, 120–127, 129–131, 133, 134, 137, 148–151, 156, 157, 3001–3052, 11878–11894, 11896–11922, 11926–11931, 11977, 22480–22689
+Monospaced | 109, 170–3000, 3053–3056, 3059–11450, 12108–12150, 12237–13500
+Two-em | 3057
+Three-em | 3058
+Quarter-width | 12235, 12236
+Zero-width | 13501–14237
 
 The glyph table that included with this specification includes registration marks that serve to indicate relative set width. Explicitly specifying width classes, such as in the above table, is clearly more accurate and reliable than measuring the distance between registration marks. Please use both resources as your guide, and feel free to deviate on a case-by-case basis.
 
@@ -214,7 +210,7 @@ Note that the registration marks used in the glyph table are in a separate layer
 
 ### OpenType Development
 
-As stated earlier in this specification, recommended OpenType feature definitions will be provided after the Beta period is over. Besides OpenType features, font developers are encouraged to implement subsets that may completely exclude one or more Supplements. Font developers are encouraged to support Supplement 0&#mdash;Adobe-KR-0&mdash;at a minimum. There is no particular requirement that all Supplements be supported, nor that all glyphs in a particular Supplement must be supported. Of course, some Supplements, if supported, are best supported in their entirety, such as Supplements 1, 2, and 7.
+As stated earlier in this specification, recommended OpenType feature definitions will be provided at a later date. Besides OpenType features, font developers are encouraged to implement subsets that may completely exclude one or more Supplements. Font developers are encouraged to support Supplement 0&#mdash;Adobe-KR-0&mdash;at a minimum. There is no particular requirement that all Supplements be supported, nor that all glyphs in a particular Supplement must be supported. Of course, some Supplements, if supported, are best supported in their entirety, such as Supplements 1, 2, and 7.
 
 For example, it is possible to develop fonts that include only the glyphs for Supplements 0, 1, 2, and 7, which would therefore include the core glyphs, the glyphs for all 11,172 modern hangul syllables, and the glyphs for all hanja included in the KS X 1001 character set standard.
 
@@ -233,7 +229,7 @@ The 36 Ideographic Variation Sequences (IVSes) that are specified in the [*Adobe
 ---
 ## Glyph Tables
 
-Representative glyphs for CIDs 0 through 22875 are provided in the [*Adobe-KR-9.pdf*](https://github.com/adobe-type-tools/Adobe-KR/raw/master/Adobe-KR-9.pdf) file that is included in this repository, with 500 glyphs shown per page. And, for reader convenience, the beginning of each Supplement is clearly marked. The typeface used to exemplify each glyph is *Source Han Serif AKR9 Regular* (aka SourceHanSerifAKR9-Regular or 본명조 AKR9 Regular), designed by Adobe, and a derivative of the open source [*Source Han Serif*](https://github.com/adobe-fonts/source-han-serif/) Pan-CJK typeface design. The specific font instance is Version 1.000, as reflected in its /CIDFontVersion dictionary entry.
+Representative glyphs for CIDs 0 through 22896 are provided in the [*Adobe-KR-9.pdf*](https://github.com/adobe-type-tools/Adobe-KR/raw/master/Adobe-KR-9.pdf) file that is included in this repository, with 500 glyphs shown per page. And, for reader convenience, the beginning of each Supplement is clearly marked. The typeface used to exemplify each glyph is *Source Han Serif AKR9 Regular* (aka SourceHanSerifAKR9-Regular or 본명조 AKR9 Regular), designed by Adobe, and a derivative of the open source [*Source Han Serif*](https://github.com/adobe-fonts/source-han-serif/) Pan-CJK typeface design. The specific font instance is Version 1.001, as reflected in its /CIDFontVersion dictionary entry.
 
 ---
 ## Adobe-KR-9 Versus Adobe-Korea1-2
@@ -243,15 +239,15 @@ One of the purposes of the Adobe-KR-9 character collection is to replace the Ado
 ---
 ## Providing Feedback
 
-Please send any feedback&mdash;especially while this specification is still labeled as a Beta&mdash;to the Adobe-KR-9 Character Collection specification author, [Dr. Ken Lunde](mailto:lunde@adobe.com?subject=[GitHub]%20The%20Adobe-KR-9%20Character%20Collection), for consideration.
+Please send any feedback to the Adobe-KR-9 Character Collection specification author, [Dr. Ken Lunde](mailto:lunde@adobe.com?subject=[GitHub]%20The%20Adobe-KR-9%20Character%20Collection), for consideration.
 
 ---
 ## Changes Since Earlier Versions
 
 The following sections detail the history of this document:
 
-### 2018-05-15
+### Since the 2018-05-15—Supplement 9—Beta Version
 
-Beta release.
+Three Supplement 5 glyphs&mdash;*uni2260*, *uni2264*, and *uni2265*&mdash;were made proportional, and moved to Supplement 0. 21 KR-tagged glyphs&mdash;*uni002B.kr*, *uni0030.kr* through *uni0039.kr*, *uni003C.kr* through *uni003E.kr*, *uni00B1.kr*, *uni00D7.kr*, *uni00F7.kr*, *uni2212.kr*, *uni2260.kr*, *uni2264.kr*, and *uni2265.kr*&mdash;were added to Supplement 0. A Supplement 8 glyph, *u30726*, was renamed to *u01200* to reflect its UTC-01200 U-Source source reference, and is not yet encoded because Extension G is not yet stable.
 
 That is all.
