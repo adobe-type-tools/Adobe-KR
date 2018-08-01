@@ -14,7 +14,7 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
 
 Adobe holds no patents on the subject matter of this specification.
 
-Last updated 2018-07-19
+Last updated 2018-08-01
 
 ---
 ## Introduction
@@ -208,11 +208,16 @@ The glyph table that included with this specification includes registration mark
 
 Note that the registration marks used in the glyph table are in a separate layer, and if their presence is annoying, that layer can be turned off, thus preventing their display.
 
-### OpenType Development
+---
+## OpenType Development
 
-As stated earlier in this specification, recommended OpenType feature definitions will be provided at a later date. Besides OpenType features, font developers are encouraged to implement subsets that may completely exclude one or more Supplements. Font developers are encouraged to support Supplement 0&#mdash;Adobe-KR-0&mdash;at a minimum. There is no particular requirement that all Supplements be supported, nor that all glyphs in a particular Supplement must be supported. Of course, some Supplements, if supported, are best supported in their entirety, such as Supplements 1, 2, and 7.
+As stated earlier in this specification, recommended OpenType feature definitions will be provided at a later date. Besides OpenType features, font developers are encouraged to implement subsets that may completely exclude one or more Supplements. Font developers are further encouraged to support Supplement 0&mdash;Adobe-KR-0&mdash;at a minimum. There is no particular requirement that all Supplements be supported, nor that all glyphs in a particular Supplement must be supported. Of course, some Supplements, if supported, are best supported in their entirety, such as Supplements 1, 2, and 7.
 
 For example, it is possible to develop fonts that include only the glyphs for Supplements 0, 1, 2, and 7, which would therefore include the core glyphs, the glyphs for all 11,172 modern hangul syllables, and the glyphs for all hanja included in the KS X 1001 character set standard.
+
+### Special Notes
+
+Font developers should be aware that fonts which include all 22,897 glyphs&mdash;or nearly all of them&mdash;cannot be built with complete [Format 4 &#x27;cmap&#x27; subtables](https://docs.microsoft.com/en-us/typography/opentype/spec/cmap#format-4-segment-mapping-to-delta-values) due to the fragmented nature of the resulting mappings that cause that particular subtable to overflow beyond its 64K size limit. The [AFDKO](https://github.com/adobe-type-tools/afdko/) *makeotf* tool will truncate the subtable to include only the first two segments under such conditions. Our testing has revealed that some environments, particularly the Excel and Notepad apps running on Windows, make use of heuristics that require particular mappings to be present in the Format 4 &#x27;cmap&#x27; subtable. The two fully-functional example OpenType fonts in the [latest release](https://github.com/adobe-type-tools/Adobe-KR/releases/latest) worked around this issue by tailoring the Format 4 &#x27;cmap&#x27; subtable to exclude the mappings for all CJK Unified Ideographs and CJK Compatibility Ideographs. (The Format 4 &#x27;cmap&#x27; subtable is used only for the purpose of heuristics, and the glyphs for CJK Unified Ideographs and CJK Compatibility Ideographs work correctly because the [Format 12 &#x27;cmap&#x27; subtable](https://docs.microsoft.com/en-us/typography/opentype/spec/cmap#format-12-segmented-coverage) is used for actual rendering of those and other glyphs in the font.)
 
 ---
 ## CMap Resources
@@ -249,5 +254,9 @@ The following sections detail the history of this document:
 ### Since the 2018-05-15—Supplement 9—Beta Version
 
 Three Supplement 5 glyphs&mdash;*uni2260*, *uni2264*, and *uni2265*&mdash;were made proportional, and moved to Supplement 0. 21 KR-tagged glyphs&mdash;*uni002B.kr*, *uni0030.kr* through *uni0039.kr*, *uni003C.kr* through *uni003E.kr*, *uni00B1.kr*, *uni00D7.kr*, *uni00F7.kr*, *uni2212.kr*, *uni2260.kr*, *uni2264.kr*, and *uni2265.kr*&mdash;were added to Supplement 0. A Supplement 8 glyph, *u30726*, was renamed to *u01200* to reflect its UTC-01200 U-Source source reference, and is not yet encoded because Extension G is not yet stable.
+
+### Since the 2018-07-19—Supplement 9—Version
+
+A [**Special Notes**](#special-notes-4) subsection was added to the [**OpenType Development**](#opentype-development) section that describes possible Format 4 &#x27;cmap&#x27; subtable overflow.
 
 That is all.
