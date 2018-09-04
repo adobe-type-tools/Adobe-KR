@@ -14,7 +14,7 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
 
 Adobe holds no patents on the subject matter of this specification.
 
-Last updated 2018-08-01
+Last updated 2018-09-04
 
 ---
 ## Introduction
@@ -88,6 +88,10 @@ Supplement 2 adds 6,814 glyphs, specifically CIDs 4637 through 11450, all of whi
 ## Supplement 3—Adobe-KR-3
 
 Supplement 3 adds 280 glyphs, specifically CIDs 11451 through 11730, for enclosed or otherwise annotated characters, such as digits, Latin characters, and hangul letters/syllables. The scope goes beyond what is found in regional character set standards, and includes appropriate characters found in the Unicode blocks named [Enclosed Alphanumerics](https://www.unicode.org/charts/PDF/U2460.pdf), [Dingbats](https://www.unicode.org/charts/PDF/U2700.pdf), [Enclosed CJK Letters and Months](https://www.unicode.org/charts/PDF/U3200.pdf), and [Enclosed Alphanumeric Supplement](https://www.unicode.org/charts/PDF/U1F100.pdf).
+
+### Special Notes
+
+Per [this page on the KS website](https://www.ksa.or.kr/ks.do), the glyph for U+327F &#x327F; KOREAN STANDARD SYMBOL (CID+11688) is generic, and its design should follow the described specification. Font developers who need this glyph can either reference the Adobe Illustrator file that is provided in the ZIP file whose link is at the bottom of that page, or reference one of the example fonts in the [latest release](https://github.com/adobe-type-tools/Adobe-KR/releases/latest) of this project whose glyph follows the speciication.
 
 ---
 ## Supplement 4—Adobe-KR-4
@@ -258,5 +262,9 @@ Three Supplement 5 glyphs&mdash;*uni2260*, *uni2264*, and *uni2265*&mdash;were m
 ### Since the 2018-07-19—Supplement 9—Version
 
 A [**Special Notes**](#special-notes-4) subsection was added to the [**OpenType Development**](#opentype-development) section that describes possible Format 4 &#x27;cmap&#x27; subtable overflow.
+
+### Since the 2018-08-01—Supplement 9—Version
+
+The representative glyph for U+327F &#x327F; (Supplement 3 CID+11688) was adjusted to conform to the specifications of this particular character, and the two example fonts in the [latest release](https://github.com/adobe-type-tools/Adobe-KR/releases/latest) were updated accordingly.
 
 That is all.
