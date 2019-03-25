@@ -1,6 +1,6 @@
 # The Adobe-KR-9 Character Collection
 ---
-© 2018 Adobe Systems Incorporated.
+© 2019 Adobe Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:
 
@@ -14,7 +14,7 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
 
 Adobe holds no patents on the subject matter of this specification.
 
-Last updated 2018-09-04
+Last updated 2019-03-25
 
 ---
 ## Introduction
@@ -196,7 +196,7 @@ A small number of KS X 1001 characters map to different Unicode code points depe
 
 ### Glyph Set Widths
 
-The following table provides CIDs and CID ranges that explicitly indicate which glyphs are intended to be designed with what set widths:
+The following table provides CIDs and CID ranges that explicitly indicate which glyphs are intended to be designed with what set widths, though implementations are free to tailor the Full-width glyphs to be monospaced, or the Monospaced ones to be full-width: 
 
 **Set Width** | **CIDs & CID Ranges**
 --- | ---
@@ -266,5 +266,9 @@ A [**Special Notes**](#special-notes-4) subsection was added to the [**OpenType 
 ### Since the 2018-08-01—Supplement 9—Version
 
 The representative glyph for U+327F &#x327F; (Supplement 3 CID+11688) was adjusted to conform to the specifications of this particular character, and the two example fonts in the [latest release](https://github.com/adobe-type-tools/Adobe-KR/releases/latest) were updated accordingly.
+
+### Since the 2018-09-04—Supplement 9—Version
+
+The introductory paragraph of the [**Glyph Set Widths**](#glyph-set-widths) section was updated to allow tailoring of Full-width and Monospaced glyphs.
 
 That is all.
